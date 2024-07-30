@@ -1,6 +1,6 @@
-
-import { getOs} from './osModule.js';
-import { getInterfaces } from './networkModule.js';
+// lo primero se mete en llaves porque se ha guardado en un objeto
+import {getOs} from './osModule.mjs';
+import getInterfaces from './networkModule.mjs';
 
 // Nombre, Tipo, Versión, Arquitectura, CPUs, Memoria Total, Memoria Libre.
 const datosOs = getOs()

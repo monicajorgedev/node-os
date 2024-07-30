@@ -4,7 +4,5 @@ const getInterfaces = () => {
     return os.networkInterfaces();
 }
 
-
-module.exports = {
-    getInterfaces
-}
+console.log(getInterfaces())
+module.exports = getInterfaces

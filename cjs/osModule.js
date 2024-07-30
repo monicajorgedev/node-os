@@ -8,11 +8,10 @@ const getOs = ()=>{
         arquitectura : os.arch(),
         cpus : os.cpus().length,
        //devuelve bytes por lo que lo divido entre 1 millón para hacer el cambio a MB
-        memoriatotal : os.totalmem()/1000000,
-        memorialibre : os.freemem()/1000000
+       memoriatotal : (os.totalmem() / (1024 * 1024)),
+       memorialibre : (os.freemem() / (1024 *1024))
     }
 } 
 
-module.exports = {
-    getOs
-}
+
+module.exports = getOs
